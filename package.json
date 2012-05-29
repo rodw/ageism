@@ -1,0 +1,23 @@
+{
+  "name"            : "ageism" ,
+  "description"     : "Abstract Gaming Engine as an Infinite State Machine",
+  "keywords"        : [ "gamification", "game mechanics", "game" ],
+  "version"         : "0.0.1",
+  "main"            : "lib/age.js",
+  "dependencies"    : {
+    "express"       : "latest",
+    "mongodb"       : "latest"
+  },
+  "devDependencies" : {
+    "coffee-script"   : "latest",
+    "uglify-js"       : "latest",
+    "expresso"        : "latest",
+    "jscoverage"      : "latest",
+    "mocha"           : "latest",
+    "should"          : "latest",
+    "docco"           : "latest"
+  },
+  "scripts" : {
+    "test"            : "make test"
+  }
+}

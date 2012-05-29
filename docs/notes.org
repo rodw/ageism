@@ -1,0 +1,5 @@
+* random thoughts
+** support teams/groups?
+** provide mechanism for enumerating pending achievements?
+** consider a "hook" mechansim so that app-specific player data can be stored in an app-specific way?
+

@@ -1,0 +1,23 @@
+body,h1,h2,h3,h4,h5,h6,p,div { margin:0;padding:0; }
+.spacer { clear:both; height:0; line-height:0; font-size:0; margin:0; padding:0; }
+.label { font-weight:bold; }
+.ts { color: #555; }
+.wrapper { float: left; }
+#achievements-container { background:#dfd; position: fixed; left:50%; top: 0%; overflow-y:auto; min-height:50%; height:50%; width: 50%;}
+#actions-container      { background:#ddf; position: fixed; left: 0%; top: 0%; overflow-y:auto; min-height:50%; height:50%; width: 50%;}
+#history-container      { background:#fdd; position: fixed; left: 0%; top:50%; overflow-y:auto; min-height:50%; height:50%; width: 100%;}
+#achievements-container .title { text-align:right; }
+#page-wrap { height:100%; width:100%; }
+#history { font-size: 0.75em; font-weight: normal; }
+.title { padding: 18px; }
+.content { padding: 0 18px; }
+#alert { z-index: 40; display:none; position: fixed;  left: 50%; margin-left: -20%; top: 15%;  background: #ffd; height: 20%; width:30%; border: 1px solid #666; -moz-box-shadow:    3px 3px 5px 2px #666; -webkit-box-shadow: 3px 3px 5px 2px #666; box-shadow:: 3px 3px 5px 2px #666; text-align:center; align:center; min-height:200px; min-width:200px; }
+.hidden { display:none;}
+.controls { position: absolute; bottom: 18px; left:10%; right:10%; text-align: center; background:#444;opacity:0.8; padding:18px; text-decoration: none; font-weight:bold; color: #fff; }
+.controls a { text-decoration: none; font-weight:bold; color: #fff; opacity:1.0; }
+.controls a:hover { text-decoration: underline; color: #66f; }
+.editor { z-index: 10; position: fixed; left:0; top:0; width:100%; height:100%; background:#444;opacity:0.99;}
+.editor .controls { opacity:1.0;}
+.editor textarea { height:80%; width:95%; margin:18px; opacity:1.0;}
+.editor h2.title { position: absolute; bottom: 18px; left: 18px; background:#444; opacity:1.0; padding:18px; color: #ccc; z-index:50;}
+

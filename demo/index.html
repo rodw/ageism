@@ -1,0 +1,64 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="./css/animate-custom.css" /> 
+  <link rel="stylesheet" type="text/css" href="./css/style.css" /> 
+  <script src="./js/ageism-client-complete.min.js"></script>
+  <script src="./js/games.js"></script>
+  <script src="./js/script.js"></script>
+</head>
+<body>
+<div id="alert" class='wrapper'>
+  <h2 id="alert-title" class="title">alert</h2>
+  <div id="alert-content" class="content">content</div>
+</div>
+
+  <div id="actions-container" class="wrapper">
+    <h2 class="title">actions</h2>
+    <div id="actions" class="content"></div>
+  </div>
+  <div id="achievements-container" class="wrapper">
+    <h2 id="achievements-title" class="title">achievements</h2>
+    <div id="achievements" class="content"></div>
+  </div>
+  <div id="history-container" class="wrapper">
+    <h2 class="title">history</h2>
+    <div id="history" class="content"></div>
+  </div>
+
+<div id="game-def-container" class="hidden editor">
+  <h2 class="title">Game Definition</h2>
+  <textarea id="game-def" wrap="off"></textarea>
+  <div class="controls"><a href="#" onclick="revert('game-def')">Revert</a>&nbsp;|&nbsp;<a href="#" onclick="toggle_gamedef_edit()">Hide Editor</a></div>
+</div>
+
+<div id="initial-player-container" class="hidden editor">
+  <h2 class="title">Initial Player State</h2>
+  <textarea id="initial-player" wrap="off"></textarea>
+  <div class="controls"><a href="#" onclick="revert('initial-player')">Revert</a>&nbsp;|&nbsp;<a href="#" onclick="toggle_initial_player_edit()">Hide Editor</a></div>
+</div>
+
+<div id="current-player-container" class="hidden editor">
+  <h2 class="title">Current Player State</h2>
+  <textarea id="current-player" wrap="off"></textarea>
+  <div class="controls"><a href="#" onclick="revert('current-player')">Revert</a>&nbsp;|&nbsp;<a href="#" onclick="toggle_current_player_edit();save_current_player_edit();">Hide Editor</a></div>
+</div>
+
+
+ <div id="main-controls" class="controls">
+   Load Game:
+   <select id="selected-game" onchange="load_game(this.value);refresh();">
+     <option value="simple">Simple</option>
+     <option value="complex">Complex</option>
+     <option value="four_square">Like Four Square</option>
+   </select>
+   &nbsp;|&nbsp;
+   <a id="show-hide-game-def" href="#" onclick="toggle_gamedef_edit()">Edit Game</a>
+   &nbsp;|&nbsp;
+   <a id="show-hide-game-def" href="#" onclick="toggle_initial_player_edit()">Edit Initial Player State</a>
+   &nbsp;|&nbsp;
+   <a id="show-hide-game-def" href="#" onclick="load_current_player_edit();toggle_current_player_edit();">Edit Current Player State</a>
+   &nbsp;|&nbsp;
+   <a href="#" onclick="on_dom_ready();refresh();">Restart Game</a>
+ </div>
+</body>
+</html>
